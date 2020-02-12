@@ -1,0 +1,20 @@
+ul{
+  padding:0;
+  li{
+    list-style-type: none;
+  }
+  a{
+    cursor:pointer;
+  }
+}
+
+.poll-list{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  > li{
+    width: 27%;
+    min-width: 275px;
+    margin-right:1rem;
+  }
+}

@@ -1,0 +1,12 @@
+.event-switch{
+  button{
+    border:none;
+    box-shadow: none;
+    border-radius: 0;
+    font-weight:900;
+    padding: 1rem 1rem 0.75rem 1rem;
+    &:hover{
+      border-bottom:3px solid $blue;
+    }
+  }
+}

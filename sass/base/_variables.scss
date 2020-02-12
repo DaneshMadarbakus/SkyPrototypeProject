@@ -1,0 +1,37 @@
+//breakpoints
+$bp-ms: 480px;
+$bp-ms-max: 479px;
+$bp-sm: 768px;
+$bp-sm-max: 767px;
+$bp-md: 992px;
+$bp-md-max: 991px;
+$bp-lg: 1200px;
+
+// Colours
+$white: hsl(0, 0%, 100%);
+$off-white: hsl(0, 0%, 94%);
+$black: hsl(0, 0%, 0%);
+$primary: hsl(352, 95%, 43%);
+$primary-light: hsl(352, 100%, 47%);
+$primary-dark: hsl(352, 100%, 31%);
+$blue: hsl(220, 67%, 24%);
+$dark-blue: hsl(220, 70%, 17%);
+$yellow: hsl(55, 99%, 60%);
+$yellow-light: hsl(42, 51%, 87%);
+$red: hsl(0, 50%, 55%);
+$grey: hsl(0, 0%, 87%);
+$dark-grey: hsl(0, 0%, 29%);
+$transparent: transparent;
+
+:root {
+  --color-off-white: #eee;
+  --color-light-grey: #d7d5dd;
+  --color-text: #565758;
+  --color-title-text: #4b4b4b;
+  --color-highlight: rgb(100, 54, 251);
+  --color-highlight-mid: rgb(91, 79, 252);
+  --color-highlight-end: rgb(75, 123, 255);
+  --color-lowlight: rgb(31, 32, 98);
+  --color-lowlight-mid: rgb(35, 42, 112);
+  --color-lowlight-end: rgb(40, 65, 140);
+}

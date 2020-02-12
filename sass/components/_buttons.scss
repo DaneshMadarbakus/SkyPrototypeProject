@@ -1,0 +1,30 @@
+button{
+  background:none;
+  border:1px solid $grey;
+  padding:1rem 2rem;
+  line-height:0.7;
+  cursor:pointer;
+  border-radius: 10px;
+  -webkit-box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.75);
+  box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.75);
+
+  &.red{
+    background: $primary;
+    color:$white;
+  }
+  &.white{
+    background:$white;
+    color:$black;
+  }
+  &.btn-lg{
+    padding:2.5rem 5rem;
+    font-size: 1.5rem;
+  }
+  &:focus{
+    outline:none;
+  }
+  &:active{
+    box-shadow: none;
+  }
+}

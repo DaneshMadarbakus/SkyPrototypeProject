@@ -1,0 +1,70 @@
+{
+  "name": "skylabs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "gulp": {
+    "src": {
+      "js": "scripts/custom/",
+      "jsVendors": "scripts/vendors/",
+      "scss": "sass/",
+      "images": "images/",
+      "html": "Flat/",
+      "dist": "dist/"
+    },
+    "selectors": {
+      "all": "*",
+      "js": "**/*.js",
+      "css": "**/*.css",
+      "scss": "**/*.scss",
+      "html": "**/*.html",
+      "images": "**/*.{png,jpg,jpeg,gif,ico,svg}",
+      "fonts": "**/*.{eot,svg,ttf,woff,woff2}"
+    },
+    "main": {
+      "server": "index.js"
+    }
+  },
+  "browserify": {
+    "transform": [
+      [
+        "babelify",
+        {
+          "presets": [
+            "es2015"
+          ]
+        }
+      ]
+    ]
+  },
+  "scripts": {
+    "build": "browserify scripts/app.js -o dist/bundle.js",
+    "watch": "watchify index.js -o dist/bundle.js -v"
+  },
+  "dependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/preset-env": "^7.8.4",
+    "ansi-colors": "^4.1.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babelify": "^10.0.0",
+    "browser-sync": "^2.26.7",
+    "browserify": "^16.5.0",
+    "express": "^4.17.1",
+    "fancy-log": "^1.3.3",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-babel": "^8.0.0",
+    "gulp-bundle-assets": "^2.29.0",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-cli": "^2.2.0",
+    "gulp-nodemon": "^2.4.2",
+    "gulp-plumber": "^1.2.1",
+    "gulp-purge-sourcemaps": "^1.0.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-strip-comments": "^2.5.2",
+    "lazypipe": "^1.0.2",
+    "require-dir": "^1.2.0"
+  }
+}

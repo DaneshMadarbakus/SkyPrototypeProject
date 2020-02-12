@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Event Page</title>
+  <script src="../scripts/custom/pollPage.js"></script>
+  <link rel="stylesheet" type="text/css" href="../dist/css/screens.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1 class="event-header"></h1>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <ul class="poll-list">
+
+      </ul>
+      <form>
+        <h3>ADD A NEW POLL</h3>
+        <input type="text" placeholder="Write your question here..." name="question"/>
+        <ul class="options-list">
+          <li><input type="text" placeholder="option" /></li>
+          <li><input type="text" placeholder="option" /></li>
+        </ul>      
+        <button class="add-option" type="button">add option</button>
+        <button type="submit" class="submit-btn">create poll</button>
+      </form>
+    </div>
+  </main>
+</body>
+</html>

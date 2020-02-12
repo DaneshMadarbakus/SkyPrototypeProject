@@ -1,0 +1,37 @@
+form {
+  width:50%;
+  min-width: 275px;
+  background:$white;
+  padding:1.25rem 1.5rem;
+  border-radius: 8px;
+
+  button{
+    height:27px;
+    padding: 0.125rem 1rem 0.125rem;
+    border-radius: 8px;
+    border:none;
+    font-weight:bold;
+    // text-transform: ;
+    margin-right:1rem;
+  }
+  >INPUT{
+    width:85%;
+  }
+  input{
+    border-radius:8px;
+    border:1px solid $grey;
+    min-width:225px;
+    height:28px;
+    padding:0.125rem 0.25rem;
+    margin:0 0.125rem 0.375rem 0;
+    &:focus{
+      outline:none;
+    }
+  }
+  ul{
+    padding-top:0.75rem;
+    li{
+      padding-bottom:0.75rem;
+    }
+  }
+}
